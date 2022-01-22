@@ -4,3 +4,51 @@ body {
   padding-left: 200px;
   padding-right: 200px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  margin: 0;
+}
+.about-jumbo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.about-jumbo h3 {
+  font-weight: bold;
+}
+.about-jumbo h1 {
+  max-width: 50vw;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 0;
+}
+.main-button {
+  border: none;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  transition: 200ms;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.main-button:hover {
+  transition: 200ms;
+  transform: translateY(-5px);
+}
+.main-button:focus {
+  background-color: gray;
+  transition: 200ms;
+}
+.work-title {
+  font-size: 2rem;
+  text-align: center;
+}
