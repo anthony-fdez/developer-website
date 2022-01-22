@@ -1,0 +1,22 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-list {
+  display: flex;
+  list-style-type: none;
+}
+.navigation-list li {
+  text-decoration: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.navigation-list li:hover {
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.header-title {
+  font-weight: bold;
+  font-size: 22px;
+}
