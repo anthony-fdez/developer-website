@@ -3,6 +3,8 @@ import "./App.css";
 // Components
 import Header from "./components/header/header";
 import Work from "./components/work/work";
+import About from "./components/about/about";
+import Contact from "./components/contact/contact";
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
         <br></br>
         <h2 className="work-title">Work</h2>
         <Work />
+        <About />
       </main>
     </div>
   );
