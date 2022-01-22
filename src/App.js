@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/header/header";
 import Work from "./components/work/work";
 import About from "./components/about/about";
+import Skills from "./components/skills/skills";
 import Contact from "./components/contact/contact";
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
         <h2 className="work-title">Work</h2>
         <Work />
         <About />
+        <Skills />
+        <Contact />
       </main>
     </div>
   );
