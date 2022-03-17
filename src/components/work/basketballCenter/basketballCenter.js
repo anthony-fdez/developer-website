@@ -13,7 +13,7 @@ const BasketballCenter = () => {
     return (
       <Modal
         isOpen={isLearnMoreModalShown}
-        handleCloseLearnMoreModal={handleCloseLearnMoreModal}
+        handleClose={handleCloseLearnMoreModal}
       >
         <div>
           <h1>This is the modal</h1>
