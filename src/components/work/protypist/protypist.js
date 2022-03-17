@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import styles from "./protypist.module.css";
 import Modal from "../../../helpers/modal/modal";
-import styles from "./basketballCenter.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -8,16 +8,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 // Images
+import icon from "./screenshots/protypist.png";
 import image1 from "./screenshots/1.png";
 import image2 from "./screenshots/2.png";
 import image3 from "./screenshots/3.png";
 import image4 from "./screenshots/4.png";
 import image5 from "./screenshots/5.png";
-import image6 from "./screenshots/6.png";
-import image7 from "./screenshots/7.png";
-import image8 from "./screenshots/8.png";
 
-const BasketballCenter = () => {
+const Protypist = () => {
   const [isLearnMoreModalShown, setIsLearnMoreModalShown] = useState(false);
 
   const handleCloseLearnMoreModal = () => {
@@ -31,7 +29,7 @@ const BasketballCenter = () => {
         handleClose={handleCloseLearnMoreModal}
       >
         <div className={styles.modal_header}>
-          <h1>B-Ball</h1>
+          <h1>ProTypist</h1>
           <button onClick={() => setIsLearnMoreModalShown(false)}>Close</button>
         </div>
 
@@ -72,44 +70,25 @@ const BasketballCenter = () => {
                 src={image5}
               />
             </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src={image6}
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src={image7}
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src={image8}
-              />
-            </SwiperSlide>
           </Swiper>
         </div>
         <br></br>
-        <h2>About Basketball Center</h2>
+        <h2>
+          About <a href="https://protypist.app">ProTypist</a>
+        </h2>
+        <br></br>
+
         <p>
-          Basketball Center is a full stack application built for Android and
-          IOS, it provides stats, real time and historical information about
-          players and teams. All the NBA games stats are updated real time as
-          well. It also has a chat built in per game, allowing users to interact
-          with other people and discuss the game.
+          ProTypist is a fully featured typing game. With a multiplayer mode,
+          custom games, quotes, top most common words in 7 languages and
+          multiple themes.
         </p>
         <br></br>
         <h2>Technologies Used</h2>
         <br></br>
         <h3>Front End / App:</h3>
         <ul>
-          <li>React Native for both the IOS and Android app</li>
+          <li>React</li>
           <li>Redux</li>
           <li>SocketIO Client</li>
           <li>Google Analytics</li>
@@ -121,61 +100,48 @@ const BasketballCenter = () => {
           <li>Express</li>
           <li>MongoDB / Mongoose</li>
           <li>SocketIO</li>
-          <li>Expo push notifications</li>
           <li>Rest API</li>
         </ul>
         <br></br>
-        <h2>Download App</h2>
+        <h2>Sourse Code</h2>
         <div className="appstore-link-container">
-          <i className="fab fa-apple fa-2x"></i>
+          <i className="fab fa-github fa-2x"></i>
           <a
             target="_blank"
-            href="https://apps.apple.com/us/app/basketball-center/id1588423237"
+            href="https://github.com/anthony-fdez/protypist"
             rel="noreferrer"
           >
-            View on AppStore
+            Github
           </a>
         </div>
-        <div className="appstore-link-container">
-          <i className="fa-brands fa-google-play fa-2x"></i>{" "}
-          <a
-            target="_blank"
-            href="https://play.google.com/store/apps/details?id=com.basketballCenter.anthony&hl=en_US&gl=US"
-            rel="noreferrer"
-          >
-            View on Google Play Store
-          </a>
-        </div>
-        <br></br>
-        <p>
-          As of right now the source code for Basketball Center is closed source
-        </p>
       </Modal>
     );
   };
 
   return (
-    <div className="project-container">
-      {modal()}
-      <div className="project-image-container">
-        <img
-          className="project-image"
-          alt="Basketball Center Logo"
-          src="./BBALL_CENTER.png"
-        />
-      </div>
-      <div className="project-info-container">
-        <h2>Basketball Center</h2>
-        <p>
-          Basketball Center is a mobile app built to help basketball fans to
-          stay up to date with everything in the league
-        </p>
-        <button onClick={() => setIsLearnMoreModalShown(true)}>
-          Learn More
-        </button>
+    <div>
+      <div className="project-container">
+        {modal()}
+        <div className="project-image-container">
+          <img
+            className="project-image"
+            alt="Basketball Center Logo"
+            src={icon}
+          />
+        </div>
+        <div className="project-info-container">
+          <h2>ProTypist</h2>
+          <p>
+            ProTypist is a fully featured typing game, with a multiplayer mode
+            and lots of other features
+          </p>
+          <button onClick={() => setIsLearnMoreModalShown(true)}>
+            Learn More
+          </button>
+        </div>
       </div>
     </div>
   );
 };
 
-export default BasketballCenter;
+export default Protypist;

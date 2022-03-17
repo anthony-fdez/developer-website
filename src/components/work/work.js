@@ -3,6 +3,7 @@ import "./work.css";
 
 // Projects
 import BasketballCenter from "./basketballCenter/basketballCenter";
+import Protypist from "./protypist/protypist";
 
 const Work = () => {
   return (
@@ -13,6 +14,8 @@ const Work = () => {
       <br></br>
 
       <BasketballCenter />
+      <br></br>
+      <Protypist />
     </>
   );
 };
