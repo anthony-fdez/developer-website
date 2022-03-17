@@ -1,0 +1,10 @@
+.not-found-404 {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-404-back-button {
+  width: 100%;
+}

@@ -1,9 +1,3 @@
-body {
-  font-family: Montserrat;
-  padding: 100px;
-  padding-left: 200px;
-  padding-right: 200px;
-}
 h1,
 h2,
 h3,
@@ -13,42 +7,113 @@ p,
 a {
   margin: 0;
 }
-.about-jumbo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-}
-.about-jumbo h3 {
-  font-weight: bold;
-}
-.about-jumbo h1 {
-  max-width: 50vw;
-  text-align: center;
-  font-size: 3.5rem;
-  margin-top: 0;
-}
-.main-button {
+
+button {
   border: none;
   padding: 10px;
   background-color: black;
   color: white;
-  font-size: 1.5rem;
   transition: 200ms;
   cursor: pointer;
   text-decoration: none;
   margin-top: 1rem;
+  width: 200px;
+  flex: 1;
 }
-.main-button:hover {
+
+button:hover {
   transition: 200ms;
-  transform: translateY(-5px);
+  background-color: rgb(70, 70, 70);
 }
-.main-button:focus {
-  background-color: gray;
-  transition: 200ms;
+
+@media only screen and (max-width: 900px) {
+  body {
+    font-family: Montserrat;
+    padding: 15px;
+  }
+  .about-jumbo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .about-jumbo h3 {
+    font-weight: bold;
+  }
+  .about-jumbo h1 {
+    max-width: 90vw;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .main-button {
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    transition: 200ms;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+
+  .main-button:focus {
+    background-color: gray;
+    transition: 200ms;
+  }
+  .work-title {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
-.work-title {
-  font-size: 2rem;
-  text-align: center;
+@media only screen and (min-width: 901px) {
+  body {
+    font-family: Montserrat;
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .about-jumbo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+  }
+  .about-jumbo h3 {
+    font-weight: bold;
+  }
+  .about-jumbo h1 {
+    max-width: 50vw;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  .main-button {
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    transition: 200ms;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+  .main-button:hover {
+    transition: 200ms;
+    background-color: rgb(70, 70, 70);
+  }
+  .main-button:focus {
+    background-color: gray;
+    transition: 200ms;
+  }
+  .work-title {
+    font-size: 2rem;
+    text-align: center;
+  }
 }

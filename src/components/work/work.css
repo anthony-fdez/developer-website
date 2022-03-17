@@ -1,9 +1,11 @@
 .project-container {
   display: flex;
+  align-items: center;
 }
 .project-image-container {
-  width: 20%;
-  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +18,7 @@
 }
 .project-info-container {
   width: calc(80% - 20px);
-  margin-left: 3rem;
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
