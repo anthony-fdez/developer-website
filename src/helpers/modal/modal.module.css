@@ -3,7 +3,6 @@
   position: fixed;
   background-color: white;
   width: calc(100vw - 40px);
-
   left: 0;
   bottom: 0;
   height: calc(95vh - 40px);
@@ -12,6 +11,8 @@
 
   transition: transform 300ms;
   will-change: transform;
+  overflow-y: scroll;
+  padding-top: 0;
 }
 
 .modal_closed {
