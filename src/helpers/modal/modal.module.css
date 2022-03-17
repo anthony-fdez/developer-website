@@ -2,7 +2,8 @@
 .modal_closed {
   position: fixed;
   background-color: white;
-  width: 100vw;
+  width: calc(100vw - 40px);
+
   left: 0;
   bottom: 0;
   height: calc(95vh - 40px);

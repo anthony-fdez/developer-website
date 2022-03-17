@@ -15,9 +15,11 @@ const BasketballCenter = () => {
         isOpen={isLearnMoreModalShown}
         handleClose={handleCloseLearnMoreModal}
       >
-        <div>
-          <h1>This is the modal</h1>
+        <div className={styles.modal_header}>
+          <h1>Basketball Center</h1>
+          <button onClick={() => setIsLearnMoreModalShown(false)}>Close</button>
         </div>
+        <br></br>
       </Modal>
     );
   };
