@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "../../../helpers/modal/modal";
 import styles from "./basketballCenter.module.css";
 
 const BasketballCenter = () => {
+  const [isLearnMoreModalShown, setIsLearnMoreModalShown] = useState(false);
+
+  const handleCloseLearnMoreModal = () => {
+    setIsLearnMoreModalShown(false);
+  };
+
+  const modal = () => {
+    return (
+      <Modal
+        isOpen={isLearnMoreModalShown}
+        handleCloseLearnMoreModal={handleCloseLearnMoreModal}
+      >
+        <div>
+          <h1>This is the modal</h1>
+        </div>
+      </Modal>
+    );
+  };
+
   return (
     <div className="project-container">
+      {modal()}
       <div className="project-image-container">
         <img
           className="project-image"
@@ -17,7 +38,9 @@ const BasketballCenter = () => {
           Basketball Center is a mobile app built to help basketball fans to
           stay up to date with everything in the league
         </p>
-        <button>Learn More</button>
+        <button onClick={() => setIsLearnMoreModalShown(true)}>
+          Learn More
+        </button>
         {/* <div className="appstore-link-container">
           <i className="fab fa-apple fa-2x"></i>
           <a
