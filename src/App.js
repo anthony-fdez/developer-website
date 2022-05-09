@@ -35,10 +35,16 @@ const Home = () => {
           </a>
         </div>
         <br></br>
-        <Work />
-        <About />
-        <Skills />
-        <Contact />
+        <div id="work">
+          <Work />
+        </div>
+        <div id="about">
+          <About />
+          <Skills />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
       </main>
     </div>
   );

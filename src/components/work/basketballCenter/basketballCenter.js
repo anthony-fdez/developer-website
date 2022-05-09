@@ -98,6 +98,7 @@ const BasketballCenter = () => {
         <div className={styles.modal_content_container}>
           <br></br>
           <h2>About Basketball Center</h2>
+          <br></br>
           <p>
             Basketball Center is a full stack application built for Android and
             IOS, it provides stats, real time and historical information about
@@ -147,6 +148,7 @@ const BasketballCenter = () => {
               View on Google Play Store
             </a>
           </div>
+          <br></br>
           <br></br>
           <p>
             As of right now the source code for Basketball Center is closed

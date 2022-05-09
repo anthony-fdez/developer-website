@@ -1,51 +1,107 @@
-.project-container {
-  display: flex;
-  align-items: center;
-}
-.project-image-container {
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  overflow: hidden;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.project-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.project-info-container {
-  width: calc(80% - 20px);
-  margin-left: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.technologies-used {
-  display: flex;
-  flex-wrap: wrap;
-}
-.technologies-used li {
-  margin-right: 2rem;
-}
+@media only screen and (max-width: 900px) {
+  .project-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  .project-image-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .project-info-container {
+    width: calc(80% - 20px);
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .technologies-used {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .technologies-used li {
+    margin-right: 2rem;
+  }
 
-.appstore-link-container {
-  display: flex;
-  align-items: center;
+  .appstore-link-container {
+    display: flex;
+    align-items: center;
+  }
+  .appstore-link-container {
+    display: flex;
+    align-items: center;
+  }
+  .appstore-link-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+  }
+  .appstore-link-container a {
+    margin-left: 10px;
+    color: black;
+    font-weight: bold;
+  }
 }
-.appstore-link-container {
-  display: flex;
-  align-items: center;
-}
-.appstore-link-container {
-  display: flex;
-  align-items: center;
-  margin: 1rem;
-}
-.appstore-link-container a {
-  margin-left: 10px;
-  color: black;
-  font-weight: bold;
-}
+@media only screen and (min-width: 901px) {
+  .project-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .project-image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .project-info-container {
+    width: calc(80% - 20px);
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .technologies-used {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .technologies-used li {
+    margin-right: 2rem;
+  }
+
+  .appstore-link-container {
+    display: flex;
+    align-items: center;
+  }
+  .appstore-link-container {
+    display: flex;
+    align-items: center;
+  }
+  .appstore-link-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+  }
+  .appstore-link-container a {
+    margin-left: 10px;
+    color: black;
+    font-weight: bold;
+  }
+} ;

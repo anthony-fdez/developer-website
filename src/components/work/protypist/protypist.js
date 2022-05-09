@@ -72,47 +72,50 @@ const Protypist = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <br></br>
-        <h2>
-          About <a href="https://protypist.app">ProTypist</a>
-        </h2>
-        <br></br>
+        <div className={styles.modal_content_container}>
+          <br></br>
+          <h2>
+            About <a href="https://protypist.app">ProTypist</a>
+          </h2>
 
-        <p>
-          ProTypist is a fully featured typing game. With a multiplayer mode,
-          custom games, quotes, top most common words in 7 languages and
-          multiple themes.
-        </p>
-        <br></br>
-        <h2>Technologies Used</h2>
-        <br></br>
-        <h3>Front End / App:</h3>
-        <ul>
-          <li>React</li>
-          <li>Redux</li>
-          <li>SocketIO Client</li>
-          <li>Google Analytics</li>
-        </ul>
-        <br></br>
-        <h3>Back End:</h3>
-        <ul>
-          <li>NodeJS</li>
-          <li>Express</li>
-          <li>MongoDB / Mongoose</li>
-          <li>SocketIO</li>
-          <li>Rest API</li>
-        </ul>
-        <br></br>
-        <h2>Sourse Code</h2>
-        <div className="appstore-link-container">
-          <i className="fab fa-github fa-2x"></i>
-          <a
-            target="_blank"
-            href="https://github.com/anthony-fdez/protypist"
-            rel="noreferrer"
-          >
-            Github
-          </a>
+          <br></br>
+
+          <p>
+            ProTypist is a fully featured typing game. With a multiplayer mode,
+            custom games, quotes, top most common words in 7 languages and
+            multiple themes.
+          </p>
+          <br></br>
+          <h2>Technologies Used</h2>
+          <br></br>
+          <h3>Front End / App:</h3>
+          <ul>
+            <li>React</li>
+            <li>Redux</li>
+            <li>SocketIO Client</li>
+            <li>Google Analytics</li>
+          </ul>
+          <br></br>
+          <h3>Back End:</h3>
+          <ul>
+            <li>NodeJS</li>
+            <li>Express</li>
+            <li>MongoDB / Mongoose</li>
+            <li>SocketIO</li>
+            <li>Rest API</li>
+          </ul>
+          <br></br>
+          <h2>Sourse Code</h2>
+          <div className="appstore-link-container">
+            <i className="fab fa-github fa-2x"></i>
+            <a
+              target="_blank"
+              href="https://github.com/anthony-fdez/protypist"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          </div>
         </div>
       </Modal>
     );
