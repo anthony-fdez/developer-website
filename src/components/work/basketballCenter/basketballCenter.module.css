@@ -19,3 +19,7 @@
   height: 100%;
   width: 100%;
 }
+.modal_content_container {
+  max-width: 1200px;
+  margin: auto;
+}

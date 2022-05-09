@@ -21,7 +21,7 @@ const Home = () => {
         <div className="about-jumbo">
           <h3>Hi, I'm Anthony!</h3>
           <h1>
-            I'm a fullstack developer. Focused on building better apps every
+            I'm a fullstack developer. Focused on building better software every
             day.
           </h1>
           <p></p>

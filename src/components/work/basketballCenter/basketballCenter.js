@@ -95,61 +95,64 @@ const BasketballCenter = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <br></br>
-        <h2>About Basketball Center</h2>
-        <p>
-          Basketball Center is a full stack application built for Android and
-          IOS, it provides stats, real time and historical information about
-          players and teams. All the NBA games stats are updated real time as
-          well. It also has a chat built in per game, allowing users to interact
-          with other people and discuss the game.
-        </p>
-        <br></br>
-        <h2>Technologies Used</h2>
-        <br></br>
-        <h3>Front End / App:</h3>
-        <ul>
-          <li>React Native for both the IOS and Android app</li>
-          <li>Redux</li>
-          <li>SocketIO Client</li>
-          <li>Google Analytics</li>
-        </ul>
-        <br></br>
-        <h3>Back End:</h3>
-        <ul>
-          <li>NodeJS</li>
-          <li>Express</li>
-          <li>MongoDB / Mongoose</li>
-          <li>SocketIO</li>
-          <li>Expo push notifications</li>
-          <li>Rest API</li>
-        </ul>
-        <br></br>
-        <h2>Download App</h2>
-        <div className="appstore-link-container">
-          <i className="fab fa-apple fa-2x"></i>
-          <a
-            target="_blank"
-            href="https://apps.apple.com/us/app/basketball-center/id1588423237"
-            rel="noreferrer"
-          >
-            View on AppStore
-          </a>
+        <div className={styles.modal_content_container}>
+          <br></br>
+          <h2>About Basketball Center</h2>
+          <p>
+            Basketball Center is a full stack application built for Android and
+            IOS, it provides stats, real time and historical information about
+            players and teams. All the NBA games stats are updated real time as
+            well. It also has a chat built in per game, allowing users to
+            interact with other people and discuss the game.
+          </p>
+          <br></br>
+          <h2>Technologies Used</h2>
+          <br></br>
+          <h3>Front End / App:</h3>
+          <ul>
+            <li>React Native for both the IOS and Android app</li>
+            <li>Redux</li>
+            <li>SocketIO Client</li>
+            <li>Google Analytics</li>
+          </ul>
+          <br></br>
+          <h3>Back End:</h3>
+          <ul>
+            <li>NodeJS</li>
+            <li>Express</li>
+            <li>MongoDB / Mongoose</li>
+            <li>SocketIO</li>
+            <li>Expo push notifications</li>
+            <li>Rest API</li>
+          </ul>
+          <br></br>
+          <h2>Download App</h2>
+          <div className="appstore-link-container">
+            <i className="fab fa-apple fa-2x"></i>
+            <a
+              target="_blank"
+              href="https://apps.apple.com/us/app/basketball-center/id1588423237"
+              rel="noreferrer"
+            >
+              View on AppStore
+            </a>
+          </div>
+          <div className="appstore-link-container">
+            <i className="fa-brands fa-google-play fa-2x"></i>{" "}
+            <a
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.basketballCenter.anthony&hl=en_US&gl=US"
+              rel="noreferrer"
+            >
+              View on Google Play Store
+            </a>
+          </div>
+          <br></br>
+          <p>
+            As of right now the source code for Basketball Center is closed
+            source
+          </p>
         </div>
-        <div className="appstore-link-container">
-          <i className="fa-brands fa-google-play fa-2x"></i>{" "}
-          <a
-            target="_blank"
-            href="https://play.google.com/store/apps/details?id=com.basketballCenter.anthony&hl=en_US&gl=US"
-            rel="noreferrer"
-          >
-            View on Google Play Store
-          </a>
-        </div>
-        <br></br>
-        <p>
-          As of right now the source code for Basketball Center is closed source
-        </p>
       </Modal>
     );
   };

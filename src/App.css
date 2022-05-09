@@ -29,7 +29,7 @@ button:hover {
 @media only screen and (max-width: 900px) {
   body {
     font-family: Montserrat;
-    padding: 15px;
+    padding: 20px;
   }
   .about-jumbo {
     display: flex;
@@ -37,8 +37,8 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
   .about-jumbo h3 {
     font-weight: bold;
@@ -73,22 +73,23 @@ button:hover {
 @media only screen and (min-width: 901px) {
   body {
     font-family: Montserrat;
-    padding: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
   }
   .about-jumbo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    /* padding: 100px; */
+    padding-top: 180px;
+    padding-bottom: 180px;
   }
   .about-jumbo h3 {
     font-weight: bold;
   }
   .about-jumbo h1 {
-    max-width: 50vw;
     text-align: center;
     font-size: 3rem;
     margin-top: 0;
