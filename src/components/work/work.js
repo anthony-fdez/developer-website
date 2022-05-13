@@ -4,6 +4,7 @@ import "./work.css";
 // Projects
 import BasketballCenter from "./basketballCenter/basketballCenter";
 import Protypist from "./protypist/protypist";
+import JJ from "./jj/jj";
 
 const Work = () => {
   return (
@@ -16,6 +17,8 @@ const Work = () => {
       <BasketballCenter />
       <br></br>
       <Protypist />
+      <br></br>
+      <JJ />
     </>
   );
 };
