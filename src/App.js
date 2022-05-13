@@ -10,6 +10,7 @@ import Skills from "./components/skills/skills";
 import Contact from "./components/contact/contact";
 
 import NotFound404 from "./components/notFound/notFound404";
+import { Fade } from "react-reveal";
 
 const Home = () => {
   return (
@@ -18,30 +19,40 @@ const Home = () => {
         <Header />
       </header>
       <main>
-        <div className="about-jumbo">
-          <h3>Hi, I'm Anthony!</h3>
-          <h1>
-            I'm a fullstack developer. Focused on building better software every
-            day.
-          </h1>
-          <p></p>
-          <a
-            target="_blank"
-            href="mailto:anthonyfdez23@gmail.com"
-            className="main-button"
-            rel="noreferrer"
-          >
-            Contact Me
-          </a>
-        </div>
+        <Fade>
+          <div className="about-jumbo">
+            <h3>Hi, I'm Anthony!</h3>
+            <h1>
+              I'm a fullstack developer. Focused on building better software
+              every day.
+            </h1>
+            <p></p>
+            <a
+              target="_blank"
+              href="mailto:anthonyfdez23@gmail.com"
+              className="main-button"
+              rel="noreferrer"
+            >
+              Contact Me
+            </a>
+          </div>
+        </Fade>
+
         <br></br>
         <div id="work">
-          <Work />
+          <Fade>
+            <Work />
+          </Fade>
         </div>
         <div id="about">
-          <About />
-          <Skills />
+          <Fade>
+            <About />
+          </Fade>
+          <Fade>
+            <Skills />
+          </Fade>
         </div>
+
         <div id="contact">
           <Contact />
         </div>

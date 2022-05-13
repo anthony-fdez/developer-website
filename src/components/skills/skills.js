@@ -9,49 +9,53 @@ const Skills = () => {
       <div className="columns">
         <ul>
           <li>
-            <p>React</p>
+            <span>HTML5/CSS</span>
           </li>
           <li>
-            <p>React Native</p>
+            <span>TypeScript</span>
           </li>
           <li>
-            <p>NodeJS</p>
+            <span>React</span>
           </li>
           <li>
-            <p>JavaScript</p>
+            <span>NextJs</span>
           </li>
           <li>
-            <p>HTML5</p>
+            <span>React Native</span>
           </li>
           <li>
-            <p>CSS</p>
+            <span>NodeJS</span>
           </li>
           <li>
-            <p>REST APIs</p>
+            <span>JavaScript</span>
+          </li>
+
+          <li>
+            <span>REST APIs</span>
           </li>
           <li>
-            <p>JSON</p>
+            <span>JSON</span>
           </li>
           <li>
-            <p>Redux</p>
+            <span>Redux</span>
           </li>
           <li>
-            <p>Git</p>
+            <span>Git</span>
           </li>
           <li>
-            <p>Linux</p>
+            <span>Linux</span>
           </li>
           <li>
-            <p>Express JS</p>
+            <span>Express JS</span>
           </li>
           <li>
-            <p>UI Design</p>
+            <span>UI Design</span>
           </li>
           <li>
-            <p>Bootstrap</p>
+            <span>Bootstrap</span>
           </li>
           <li>
-            <p>Fluent in Spanish</p>
+            <span>Fluent in Spanish</span>
           </li>
         </ul>
       </div>
