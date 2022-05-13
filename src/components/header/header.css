@@ -23,14 +23,9 @@
   }
   .navigation-list li {
     text-decoration: none;
-    margin-right: 10px;
     cursor: pointer;
   }
-  .navigation-list li:hover {
-    text-decoration: none;
-    margin-right: 10px;
-    font-weight: bold;
-  }
+
   .header-title {
     font-weight: bold;
     font-size: 1.5rem;
@@ -58,16 +53,26 @@
   }
   .navigation-list li {
     text-decoration: none;
-    margin-right: 10px;
     cursor: pointer;
   }
-  .navigation-list li:hover {
-    text-decoration: none;
-    margin-right: 10px;
-    font-weight: bold;
-  }
+
   .header-title {
     font-weight: bold;
     font-size: 1.5rem;
+  }
+  .navigation_button {
+    width: auto;
+    background-color: transparent !important;
+    padding: 0px;
+    color: black;
+    font-size: 18px;
+    margin: 0px;
+    margin-right: 10px;
+    text-align: center;
+    width: auto;
+    border-bottom: 2px solid transparent;
+  }
+  .navigation_button:hover {
+    border-bottom: 2px solid black;
   }
 }
